@@ -12,5 +12,5 @@ int main() {
     using namespace A;
     using namespace B;
 
-    cout << x << std::endl;
+    // cout << x << std::endl;
 }
