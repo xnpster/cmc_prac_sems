@@ -41,6 +41,19 @@ STL:
     3) forward
     4) biderectional
     5) random_access
+
+
+    bool empty()
+    size_t capacity()
+    size_t size()
+    void push_back(T val)
+    void pop_back()
+    reference front()
+    reference back()
+    iterator insert(iterator p, T val)
+    
+
+
 */
 
 template <class T>
