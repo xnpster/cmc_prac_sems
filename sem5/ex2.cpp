@@ -17,5 +17,4 @@ int main() {
 
     v.erase(end, v.end());
     for_each(v.begin(), v.end(), [](int a){ cout << a << endl;} );
-
 }
