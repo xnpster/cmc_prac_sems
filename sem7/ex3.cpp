@@ -5,19 +5,16 @@ using namespace std;
 
 /*
     exceptions
+
+    noexcept
+        unexcepted (если исключение выброшено несмотря на except)
 */
 
-
-class A {
-public:
-    virtual void f() {};
-};
-
-
-class B : public A {
-public:
-    // virtual void f() {};
-};
+// Ha-ha, ISO C++17 says 
+// "error: ISO C++17 does not allow dynamic exception specifications"
+// void f() throw(int, char) {
+//     throw 'a';
+// }
 
 int main() {
     try {
@@ -31,6 +28,6 @@ int main() {
     } catch(const char* p) { // 3
 
     } catch (...) {
-        
+
     }
 }
